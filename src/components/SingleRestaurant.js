@@ -10,7 +10,7 @@ function SingleRestaurant({ restaurant }) {
         <Col>
             <Card>
                 <Card.Body>
-                    <Link to={`/restaurant/${restaurant._id}`}>
+                    <Link to={`/restaurant/${restaurant.id}`}>
                             <h1>{restaurant.name}</h1>
                         </Link>
                     <Rating value={restaurant.rating}></Rating>

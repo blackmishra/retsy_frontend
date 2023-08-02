@@ -15,7 +15,7 @@ function Homescreen() {
 
 function showRestaurant(restaurant) {
     return (
-        <Col key={restaurant._id} >
+        <Col key={restaurant.id} >
             <SingleRestaurant restaurant={restaurant} />
         </Col>
     )

@@ -1,7 +1,7 @@
 const Restaurants = [
     {
     "name": ["& Son Greenwich Village"],
-    "_id": [
+    "id": [
         65574
     ],
     "rating": [
@@ -53,7 +53,7 @@ const Restaurants = [
     "name": [
         "&Beer"
     ],
-    "_id": [
+    "id": [
         65698
     ],
     "rating": [
@@ -99,7 +99,7 @@ const Restaurants = [
     "name": [
         "11 Tigers"
     ],
-    "_id": [
+    "id": [
         64816
     ],
     "rating": [
@@ -161,7 +161,7 @@ const Restaurants = [
     "name": [
         "12 Chairs Cafe Soho"
     ],
-    "_id": [
+    "id": [
         4994
     ],
     "rating": [

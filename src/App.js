@@ -3,12 +3,12 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import { Container } from 'react-bootstrap';
 import Homescreen from './screens/Homescreen';
+import AuthScreen from './screens/AuthScreen';
+import CartScreen from './screens/CartScreen';
+
+
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
-import SingleRestaurant from './components/SingleRestaurant';
 import RestaurantDetailScreen from './screens/RestaurantDetailScreen';
-
-
-
 
 
 
@@ -22,6 +22,9 @@ function App() {
             <Routes>
               <Route path='/' element={<Homescreen/>} />
               <Route path='/restaurant/:id' element={<RestaurantDetailScreen/>} />
+              <Route path='/cart' element={<CartScreen/>} />
+              <Route path='/login' element={<AuthScreen/>} />
+
             </Routes>
           </Container>
         </main>

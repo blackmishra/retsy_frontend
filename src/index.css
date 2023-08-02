@@ -1,6 +1,12 @@
-main{
+main {
     min-height: 80vh;
 }
-#rating-tag{
-color:brown;
+
+#rating-tag {
+    color: brown;
+}
+
+.star-rating {
+    margin-left: 2%;
+    font-style: italic;
 }
