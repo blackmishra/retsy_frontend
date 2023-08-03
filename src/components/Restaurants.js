@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 
 
 
-function SingleRestaurant({ restaurant }) {
+function Restaurants({ restaurant }) {
     return (
         <Col>
             <Card>
@@ -27,4 +27,4 @@ function SingleRestaurant({ restaurant }) {
     )
 }
 
-export default SingleRestaurant
+export default Restaurants
