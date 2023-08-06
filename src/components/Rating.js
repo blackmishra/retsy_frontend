@@ -2,6 +2,8 @@ import React from 'react'
 
 function Rating({ value }) {
     let val = value
+    // console.log('Printing from Rating')
+    // console.log(value)
     let str_val = val.toString()
     let arr_val = str_val.split('.')
     let main_val = parseInt(arr_val[0])
@@ -15,6 +17,7 @@ function Rating({ value }) {
         rating_classes.push('fas fa-star-half-alt')
     }
     else {
+        
         rating_classes.push('fa-regular fa-star')
     }
     return (

@@ -4,7 +4,7 @@ import Footer from './components/Footer';
 import { Container } from 'react-bootstrap';
 import Homescreen from './screens/Homescreen';
 import AuthScreen from './screens/AuthScreen';
-import CartScreen from './screens/CartScreen';
+import BookingScreen from './screens/BookingScreen';
 
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
@@ -22,7 +22,7 @@ function App() {
             <Routes>
               <Route path='/' element={<Homescreen/>} />
               <Route path='/restaurant/:id' element={<RestaurantDetailScreen/>} />
-              <Route path='/cart' element={<CartScreen/>} />
+              <Route path='/booking' element={<BookingScreen/>} />
               <Route path='/login' element={<AuthScreen/>} />
 
             </Routes>

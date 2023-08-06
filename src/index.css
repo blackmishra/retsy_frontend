@@ -10,3 +10,17 @@ main {
     margin-left: 2%;
     font-style: italic;
 }
+
+.card-img {
+    height: auto;
+    max-height: 250px;
+    width: auto;
+    max-width: 250px;
+}
+
+/* .card-main-card {
+    display: flex;
+    align-items: space-between;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} */
