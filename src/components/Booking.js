@@ -1,7 +1,4 @@
-import { PlusOutlined } from '@ant-design/icons';
 import React, { useState } from 'react';
-import { Card, Space } from 'antd';
-
 import Ddropdown from '../components/Ddropdown'
 
 import {
@@ -21,17 +18,9 @@ import {
 } from 'antd';
 import Timepicker from './Timepicker';
 
-const { RangePicker } = DatePicker;
-const { TextArea } = Input;
-const normFile = (e) => {
-  if (Array.isArray(e)) {
-    return e;
-  }
-  return e?.fileList;
-};
 
 function Booking() {
-  // console.log(allRestList)
+
   const [componentDisabled, setComponentDisabled] = useState(false);
   return (
     <>
@@ -48,17 +37,7 @@ function Booking() {
           maxWidth: 600,
         }}
       >
-        <h5>Select Restaurant</h5>
-
-        {/* <Form.Item>
-          <Select>
-            <Select.Option value={restData}>Demo</Select.Option>
-            {allRestList.map((item) => {
-              return <option key={item.rest_id}>{item.rest_name}</option>
-            })}
-          </Select>
-          <Ddlist restData = {restData}/>
-        </Form.Item> */}
+        <h5>Restaurant</h5>
         <Form.Item>
           <Ddropdown />
 
@@ -80,10 +59,6 @@ function Booking() {
         <Form.Item valuePropName="checked">
           <Switch />
         </Form.Item>
-
-        {/* <Form.Item>
-          <Button>Save</Button>
-        </Form.Item> */}
       </Form>
       <Checkbox
         checked={componentDisabled}
@@ -92,7 +67,6 @@ function Booking() {
         I accept <a href="">terms</a> and conditions.
       </Checkbox>
       <Button disabled={!componentDisabled} variant="outlined" color="error">Save</Button>
-
     </>
 
   );
