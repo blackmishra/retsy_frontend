@@ -44,7 +44,7 @@ function Booking() {
         </Form.Item>
         <h5>Table Size:</h5>
         <Form.Item >
-          <Slider />
+          <Slider min={0} max={10}/>
         </Form.Item>
         <h5>Reservation Date</h5>
         <Form.Item>
